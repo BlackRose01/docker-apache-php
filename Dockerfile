@@ -21,4 +21,4 @@ RUN echo "extension=oci8.so" > /etc/php/7.3/apache2/conf.d/30-oci8.ini
 
 EXPOSE 80
 
-CMD service apache2 start
+CMD sudo service apache2 start
