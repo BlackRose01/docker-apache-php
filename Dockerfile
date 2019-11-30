@@ -17,7 +17,7 @@ RUN ln -s -f /usr/local/instantclient/libclntsh.so.12.1 /usr/local/instantclient
 RUN echo 'instantclient,/usr/local/instantclient' | pecl install oci8
 RUN echo "extension=oci8.so" > /etc/php/7.3/apache2/conf.d/30-oci8.ini
 
-RUN chmod -R 0644 /var/www
+#RUN chmod -R 0644 /var/www
 
 EXPOSE 80
 
