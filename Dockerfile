@@ -18,3 +18,5 @@ RUN echo 'instantclient,/usr/local/instantclient' | pecl install oci8
 RUN echo "extension=oci8.so" > /etc/php/7.3/apache2/conf.d/30-oci8.ini
 
 EXPOSE 80
+
+CMD service apache2 start
